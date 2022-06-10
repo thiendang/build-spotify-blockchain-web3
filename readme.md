@@ -1,34 +1,103 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# build-spotify-blockchain-web3
+🚀 Build Spotify Blockchain Web3 dApp with Nextjs, Solana, Phantom, QuickNode & Digital Ocean
 
-## Getting Started
+### Features
 
-First, run the development server:
+Developer experience first:
 
-```bash
-npm run dev
-# or
-yarn dev
+- ⚡ Building a Web 3.0 Application with Next JS [Next.js](https://nextjs.org)
+- 🔥 Creating your program on the Solana Blockchain using Anchor with Rust
+- 💎 Storing your songs on the Solana blockchain
+- 💖 Use Quicknode as our RPC provider to connect to the blockchain)
+- 🦊 Adding Web 3.0 authentication using Metamask [Metamask](https://metamask.io/)
+- 💡 Use Phantom Wallet to authenticate the users
+- 🌈 Deploy and host the app on Digital Ocean 
+
+Built-in feature from Next.js:
+
+- ☕ Minify HTML & CSS
+- 💨 Live reload
+- ✅ Cache busting
+
+### Philosophy
+
+- Minimal code
+- SEO-friendly
+- 🚀 Production-ready
+
+### Requirements
+
+- Node.js 14+ and npm
+
+### Getting started
+
+Run the following command on your local environment:
+
+```shell
+yarn install
+#or
+npm run install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, you can run locally in development mode with live reload:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```shell
+yarn dev
+#or
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Open http://localhost:3000 with your favorite browser to see your project.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Deploy to production
 
-## Learn More
+You can see the results locally in production mode with:
 
-To learn more about Next.js, take a look at the following resources:
+```shell
+$ yarn build
+$ yarn start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The generated HTML and CSS files are minified (built-in feature from Next js). It will also removed unused CSS from [Tailwind CSS](https://tailwindcss.com).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can create an optimized production build with:
 
-## Deploy on Vercel
+```shell
+npm run build-prod
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Now, your blog is ready to be deployed. All generated files are located at `out` folder, which you can deploy with any hosting service.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Testing
+
+All tests are colocated with the source code inside the same directory. So, it makes it easier to find them. Unfortunately, it is not possible with the `pages` folder which is used by Next.js for routing. So, what is why we have a `pages.test` folder to write tests from files located in `pages` folder.
+
+### Deploy to Netlify
+
+Clone this repository on own GitHub account and deploy to Netlify:
+
+[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com)
+
+### Deploy to Vercel
+
+Deploy this Next JS Boilerplate on Vercel in one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com)
+
+### VSCode information (optional)
+
+If you are VSCode users, you can have a better integration with VSCode by installing the suggested extension in `.vscode/extension.json`. The starter code comes up with Settings for a seamless integration with VSCode. The Debug configuration is also provided for frontend and backend debugging experience.
+
+With the plugins installed on your VSCode, ESLint and Prettier can automatically fix the code and show you the errors. Same goes for testing, you can install VSCode Jest extension to automatically run your tests and it also show the code coverage in context.
+
+Pro tips: if you need a project wide type checking with TypeScript, you can run a build with <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> on Mac.
+
+### Contributions
+
+Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug.
+
+### License
+
+Licensed under the MIT License, Copyright © 2022
+
+See [LICENSE](LICENSE) for more information.
